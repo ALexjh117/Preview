@@ -1,0 +1,266 @@
+/* Fondo General del Body (Motocross) */
+body {
+    background-image: url("../img/fondo.jpg"); /* Imagen de fondo para todo el body */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)); /* Fondo oscuro semi-translúcido con gradiente */
+    padding: 40px 30px;
+    color: white;
+    text-align: left;
+    position: relative;
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Contenedor dentro del Header con Gradiente */
+header .container {
+    background: linear-gradient(135deg, rgba(44, 62, 80, 0.8), rgba(52, 152, 219, 0.8)); /* Gradiente más sutil */
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    max-width: 700px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título del Header */
+header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Párrafo del Header */
+header p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.85);
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Íconos en el Header */
+header .icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 3rem;
+    color: #3c8dff;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+header .icon:hover {
+    opacity: 1;
+}
+
+/* Efecto Hover en el Contenedor */
+header .container:hover {
+    transform: scale(1.05); /* Efecto de escala suave cuando se pasa el ratón */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Estilos para la sección principal */
+main {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.3); /* Fondo oscuro con transparencia */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/* Título de la sección */
+main h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff6f61, #ffcc00); /* Gradiente cálido */
+    color: transparent;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Lista de habilidades */
+section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Estilo para cada habilidad */
+section ul li {
+    background: linear-gradient(135deg, #3c8dff, #1e3c72); /* Gradiente suave de azul */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* Hover en los items de la lista */
+section ul li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #00f7ff, #00ff80);
+}
+
+/* Íconos antes de cada habilidad */
+section ul li::before {
+    content: "\f13d"; /* Ícono de Font Awesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+/* Sección "Intereses Personales" */
+section {
+    background: linear-gradient(135deg, rgba(0, 172, 193, 0.7), rgba(0, 182, 156, 0.7)); /* Gradiente suave azul-verde */
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Título de "Intereses Personales" */
+section h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Párrafo de "Intereses Personales" */
+section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+    color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, rgba(28, 28, 28, 0.9), rgba(0, 0, 0, 0.7)); /* Fondo oscuro con gradiente */
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Párrafo dentro del footer */
+footer p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* Botón de contacto */
+footer .button {
+    background: linear-gradient(135deg, #33cc99, #00b09b); /* Gradiente verde */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Hover en el botón de contacto */
+footer .button:hover {
+    background: linear-gradient(135deg, #00b09b, #33cc99);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    header {
+        padding-left: 20px;
+    }
+
+    header .container {
+        padding: 15px;
+    }
+
+    header .icon {
+        font-size: 2.5rem;
+    }
+
+    main {
+        padding: 30px 15px;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    section ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section ul li {
+        font-size: 1rem;
+        padding: 12px 20px;
+        width: 90%;
+    }
+}
+
+body {
+    background-image: url("../img/fondo.jpg"); /* Imagen de fondo para todo el body */
+    background-repeat: no-repeat;
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen de fondo durante el scroll */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

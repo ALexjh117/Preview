@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --clr: rgba(255, 255, 255, 0.5); /* Este es el color que tenías para el borde */
+    --highlight-color: rgb(255, 255, 255); /* Color cuando el texto se resalta */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+
+ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    font-size: 4em;
+    text-decoration: none;
+    line-height: 1em;
+    letter-spacing: 1em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--clr); /* Color original del borde */
+    display: inline-block;
+}
+
+ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--highlight-color); /* Color del texto cuando se revela */
+    width: 0;
+    overflow: hidden;
+    transition: width 1s, border-right 0.5s;
+    border-right: 8px solid var(--highlight-color); /* Color del borde cuando el texto aparece */
+    -webkit-text-stroke: 1px var(--highlight-color); /* Borde del texto */
+}
+
+ul li a:hover::before {
+    width: 100%;
+    border-right: 8px solid transparent;
+}
+
+ul li a:hover {
+    -webkit-text-stroke: 1px var(--highlight-color); /* El contorno se intensifica cuando haces hover */
+}
