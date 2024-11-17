@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Playlist</title>
+    <link rel="stylesheet" href="css/playlist.css">
+</head>
+<body>
+
+  
+    <header class="header">
+     
+        <div class="profile">
+            <img src="img/perfil.jpg" alt="Imagen de perfil" class="profile-img">
+            <p class="profile-name">Jhoan AG</p>
+        </div>
+    
+        
+        <button>Artistas</button>
+        <button>Playlist</button>
+        <button>Destacados</button>
+        <button>Artistas Destacados</button>
+    </header>
+    
+    <br>
+
+    <main>
+        <button>Artistas Destacados</button>
+        <br>
+        <br>
+        <br>
+
+        <section>
+            <!-- Imágenes de la Playlist con la funcionalidad para cambiar el fondo -->
+            <img src="img/musci1.avif" alt="Imagen 1" onclick="setBackground(this)">
+            <img src="img/music2.jpg" alt="Imagen 2" onclick="setBackground(this)">
+            <img src="img/music4.png" alt="Imagen 3" onclick="setBackground(this)">
+            <img src="img/music5.jpg" alt="Imagen 4" onclick="setBackground(this)">
+            <img src="img/music6.webp" alt="Imagen 5" onclick="setBackground(this)">
+            <img src="img/arca.jpg" alt="Imagen 5" onclick="setBackground(this)">
+            <img src="img/balvin.jpg" alt="Imagen 5" onclick="setBackground(this)">
+            <img src="img/canservero.png" alt="Imagen 5" onclick="setBackground(this)">
+            <img src="img/ñengo.jpg" alt="Imagen 5" onclick="setBackground(this)">
+        </section>
+        <br>
+
+</main>
+
+<button>Genero urbano </button>
+<br>
+<br>
+<section>
+  
+        
+        
+            <img src="img/kevin.jpg" alt="Kevin Roldan" onclick="setBackground(this)">
+            <img src="img/justin.jpg" alt="Justin Quiles" onclick="setBackground(this)">
+            <img src="img/J-ALVAREZ.jpg" alt="J Alvarez" onclick="setBackground(this)">
+            <img src="img/dfzm.png" alt="DFZM" onclick="setBackground(this)">
+            <img src="img/nicky.jpg" alt="Nicky Jam" onclick="setBackground(this)">
+            </section>
+            <br>
+            <br>
+       
+
+            <button> Màs artistas de mi playlist</button>
+            <br>
+            <br>
+    <section>
+        <!-- Género Despecho -->
+        
+            <img src="img/jessi.jpg" alt="Jessi Uribe" onclick="setBackground(this)">
+            <img src="img/dario.jpg" alt="Dario Gomez" onclick="setBackground(this)">
+            <img src="img/luisalber.jpg" alt="Luis Alberto Posada" onclick="setBackground(this)">
+            <img src="img/alzate.jpg" alt="Alzate" onclick="setBackground(this)">
+            <img src="img/yeison.jpg" alt="Yeison Jimenez" onclick="setBackground(this)">
+     
+    </section>
+    <br>
+    <br>
+
+    <button> No pueden faltar</button>
+    <br>
+    <br>
+    <section>   <!-- Género Salsa -->
+      
+            <img src="img/hector.jpg" alt="Héctor Lavoe" onclick="setBackground(this)">
+            <img src="img/adalberto.webp" alt="Adalberto Santiago" onclick="setBackground(this)">
+            <img src="img/willie.jpg" alt="Willie Colón" onclick="setBackground(this)">
+            <img src="img/frankie.jpg" alt="Frankie Ruiz" onclick="setBackground(this)">
+            <img src="img/gilberto.jpg" alt="Gilberto Santa Rosa" onclick="setBackground(this)">
+   
+    </section>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Mi Playlist | Escúchala ahora </p>
+
+            <div class="recent-songs">
+                <h4>Últimas Canciones Escuchadas</h4>
+                <ul>
+                    <li>
+                        
+                        <span>Anuel AA - Blessed - Deportivo</span>
+                        <button class="play-btn" onclick="playSong('song1')">Reproducir</button>
+                    </li>
+                    <li>
+                        
+                        <span>Arcangel - Contigo Quiero Amores</span>
+                        <button class="play-btn" onclick="playSong('song2')">Reproducir</button>
+                    </li>
+                    <li>
+                        
+                        <span>Canserbero - Mundo de Piedra</span>
+                        <button class="play-btn" onclick="playSong('song3')">Reproducir</button>
+                    </li>
+                    <li>
+                    
+                        <span>Maluma - Curiosidad</span>
+                        <button class="play-btn" onclick="playSong('song4')">Reproducir</button>
+                    </li>
+                    <li>
+                       
+                        <span>J Balvin - Ay Vamos</span>
+                        <button class="play-btn" onclick="playSong('song5')">Reproducir</button>
+                    </li>
+                    <li>
+                       
+                        <span>Ryan Castro - Jordan</span>
+                        <button class="play-btn" onclick="playSong('song6')">Reproducir</button>
+                    </li>
+                    <li>
+                        
+                        <span>Ñengo Flow - Noches Frías</span>
+                        <button class="play-btn" onclick="playSong('song7')">Reproducir</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Función para reproducir canciones
+        function playSong(songId) {
+            switch(songId) {
+                case 'song1':
+                    alert("Reproduciendo: Anuel AA - Blessed");
+                    break;
+                case 'song2':
+                    alert("Reproduciendo: Arcangel - Contigo Quiero Amores");
+                    break;
+                case 'song3':
+                    alert("Reproduciendo: Canserbero - Mundo de Piedra");
+                    break;
+                case 'song4':
+                    alert("Reproduciendo: Maluma - Curiosidad");
+                    break;
+                case 'song5':
+                    alert("Reproduciendo: J Balvin - Ay Vamos");
+                    break;
+                case 'song6':
+                    alert("Reproduciendo: Ryan Castro - Jordan");
+                    break;
+                case 'song7':
+                    alert("Reproduciendo: Ñengo Flow - Noches Frías");
+                    break;
+                default:
+                    alert("Canción no encontrada.");
+            }
+        }
+    </script>
+
+</body>
+</html>
